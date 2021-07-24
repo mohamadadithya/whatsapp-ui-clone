@@ -1,0 +1,171 @@
+/* © WhatsApp UI Clone by Mohamad Adithya */
+
+:root {
+  font-size: 14px;
+  --primaryColor: #075E54;
+  --secondaryColor: #AAA9A8;
+  --tertierColor: #25D366;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+body {
+  font-family: Helvetica;
+  font-weight: 300;
+  position: relative;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.container {
+  margin: 0 1.2em;
+}
+
+header {
+  background-color: var(--primaryColor);
+  padding: 1.4em 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+header .search-menus {
+  color: white;
+}
+
+header .search-menus .menu {
+  margin-left: 18px;
+}
+
+header .pop-menu {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  list-style: none;
+  line-height: 2.5;
+  font-size: 1.2rem;
+  padding: .5em 1em;
+  border-radius: 2px;
+  background-color: white;
+  color: black;
+  box-shadow: rgba(50, 50, 93, .25) 0px 2px 5px -1px, rgba(0, 0, 0, .3) 0px 1px 3px -1px;
+  opacity: 0;
+  z-index: -1;
+  transition: .2s all ease;
+}
+
+header .pop-menu.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.nav-bar {
+  background-color: var(--primaryColor);
+  margin-bottom: 8px;
+  display: grid;
+  grid-template-columns: 16% 28% 28% 28%;
+  justify-items: space-between;
+  align-items: center;
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, .25) 0px 2px 5px -1px, rgba(0, 0, 0, .3) 0px 1px 3px -1px;
+}
+
+.nav-bar.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav-bar .nav {
+  color: var(--secondaryColor);
+  text-transform: uppercase;
+  padding: 1em 0;
+}
+
+.nav-bar .nav.active {
+  border-bottom: 3px solid white;
+  color: white;
+}
+
+.icon {
+  font-size: 1.4rem;
+}
+
+.chat {
+  padding: 1em 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chat .info {
+  display: flex;
+}
+
+.chat .username {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+
+.chat .recent-chat {
+  color: gray;
+  max-width: 200px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.chat .recent-chat .read {
+  color: #34B7F1;
+}
+
+.chat .photo {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-right: 18px;
+}
+
+.chat .recent-chat-time {
+  font-size: 12px;
+  color: gray;
+}
+
+.contact-button {
+  padding: 1em;
+  border: 0;
+  border-radius: 50%;
+  color: white;
+  transform: rotate(-90deg);
+  font-size: 1.3rem;
+  position: fixed;
+  bottom: 20px;
+  right: 1.2em;
+  background-color: var(--tertierColor);
+}
+
+// Utility Class
+
+.column {
+  flex-direction: column;
+}
+
+/* © WhatsApp UI Clone by Mohamad Adithya */
