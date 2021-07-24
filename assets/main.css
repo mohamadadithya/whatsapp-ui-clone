@@ -122,7 +122,7 @@ header .pop-menu.active {
 .chat .username {
   font-size: 1.2rem;
   margin-bottom: 5px;
-  font-weight: normal;
+  font-weight: 300;
 }
 
 .chat .recent-chat {
